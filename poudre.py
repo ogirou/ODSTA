@@ -229,11 +229,11 @@ def plot_bourd_f(te,pf,dt,dp,x_IARF,reg_dp,popp,k_Bourdet):
 	plt.grid(b=True, which='major', linestyle='solid')
 	plt.grid(b=True, which='minor', linestyle='dashed')
 	leg = plt.legend((popp, 'Derivee','Pente nulle'),'best', shadow=False)
-	plt.text(te[5], pf[0]/2, "k = %d"%k_Bourdet   , #
+	plt.text(te[5], pf[0]/2, "k = %d"%k_Bourdet   ,
 		bbox={'facecolor':'white', 'alpha':1, 'pad':15})
 	plt.show()
 
 #
-# end
+# end pour le moment
 #
 
