@@ -233,16 +233,7 @@ def plot_bourd_f(te,pf,dt,dp,x_IARF,reg_dp,popp,k_Bourdet):
 		bbox={'facecolor':'white', 'alpha':1, 'pad':15})
 	plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
+#
+# end
+#
 
