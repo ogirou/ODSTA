@@ -267,8 +267,43 @@ mix=float(raw_input('Connaissance exacte de la mixture de gaz? Oui = 1, Non = 0'
 print''
 
 if mix==1:
-	print'Implémenter le calcul de mixture connu'
-	print''
+	#
+	# Calcul de p_pr et T_pr par la méthode de Kay - 1936
+	#
+	
+	print'Méthode Kay - 1936, Valable quand la portion de C7+ est faible.\n'
+
+	table=array([[16.042,667.0,-116.66],
+	[30.069,706.6,89.92],
+	[44.096,615.5,205.92],
+	[58.122,527.9,274.41],
+	[58.122,550.9,305.55],
+	[72.149,490.4,369],
+	[72.149,488.8,385.8],
+	[86.175,436.9,453.8],
+	[100.202,396.8,512.9],
+	[114.229,360.7,564.2],
+	[128.255,330.7,610.8],
+	[142.282,304.6,652.2],
+	[28.01,506.7,-220.63],
+	[44.01,1070.0,87.76],
+	[34.082,1306.5,212.81],
+	[28.959,551.9,-220.97],
+	[2.0159,190.7,-399.9],
+	[31.9988,731.4,-181.43],
+	[28.0135,492.5,-232.53],
+	[18.0153,3200.1,705.1]])
+
+	fichier = open("compo.csv", "r")
+
+	compo=array([])
+	for n in arange(1,21,1):
+		l=fichier.readline().rstrip('\n\r').split(",")
+		compo=np.append(compo,float(l[1]))
+
+	p_pc=sum(table[0,1]*compo)
+	T_pc=sum(table[0,2]*compo)
+
 else:
 	#
 	# Calcul de p_pr et T_pr selon la méthode de Sutton - 2005
