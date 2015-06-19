@@ -5,5 +5,3 @@ ODSTA stands for Open Drill Stem Test Analysis. Written to determine permeabilit
 Tools: Honer plot, derivative loglog plot, Agarwal equivalent time. Also calculates properties of fluids based on p and T.
 
 Mostly a draft, created during my PhD, the program as a monolithic structure based on my workflow itself based on my set of data. Comments are in french, can be translated on request.
-
-Copyright Olivier Girou 2013
