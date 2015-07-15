@@ -680,7 +680,7 @@ os.system('xdvi woup.dvi')
 #
 
 
-print ''
+print'                         -'
 print" - - - - - Tout est bien qui fini bien. - - - - - "
 print"                         -"
 print"                         -"
