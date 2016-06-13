@@ -8,8 +8,8 @@ import numpy as np
 from numpy import *
 import pylab
 import os
-import poudre		# Contient la fonction der_auto pour caler automatiquement 
-from poudre import * 	# la droite de pente nulle de la dérivée à l'IARF
+import interpFunctions		# Contient la fonction der_auto pour caler automatiquement 
+from interpFunctions import * 	# la droite de pente nulle de la dérivée à l'IARF
 
 ########################################################
 print ''
